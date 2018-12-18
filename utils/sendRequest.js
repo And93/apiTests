@@ -10,10 +10,8 @@ const sendRestRequestWithHeader = data => {
     };
 
     return request(options)
-        .then(response => {
-            return response;
-        })
-        .catch(err => {throw new Error(err)});
+        .then(response => response)
+        .catch(err => { throw new Error(err) });
 };
 
 module.exports = sendRestRequestWithHeader;
